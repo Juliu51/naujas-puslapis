@@ -5,4 +5,35 @@ main {
     background-position: center top;
     background-size: cover;
     // background-attachment: fixed;
+    .main-textas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px 0 20px;
+        .ico {
+            height: 70px;
+            margin-bottom: 30px;
+        }
+        h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        width: 100%;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        font-size: 70px;
+        font-weight: 800;
+        }
+        p {
+            
+            color: #87CEEB;
+            text-shadow: 1px 1px black;
+            width: 90vmin;
+            font-size: 28px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+    }
 }
