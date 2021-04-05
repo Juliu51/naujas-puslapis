@@ -35,5 +35,15 @@ main {
             line-height: 30px;
             font-weight: 500;
         }
+        .laikas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            .dienos {
+                
+                margin: 20px;
+            }
+        }
     }
 }

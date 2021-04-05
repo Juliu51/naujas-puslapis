@@ -110,3 +110,14 @@ main .main-textas p {
   line-height: 30px;
   font-weight: 500;
 }
+
+main .main-textas .laikas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main .main-textas .laikas .dienos {
+  margin: 20px;
+}
