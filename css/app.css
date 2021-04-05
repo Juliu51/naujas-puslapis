@@ -68,3 +68,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+main {
+  min-height: 100vh;
+  background-image: url("../img/bc/pexels-francesco-ungaro-1525041.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
