@@ -1,11 +1,10 @@
-main {
+header {
     min-height: 100vh;
     background-image: url('../img/bc/pexels-francesco-ungaro-1525041.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    // background-attachment: fixed;
-    .main-textas {
+    .header-textas {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -28,14 +27,12 @@ main {
         font-weight: 800;
         }
         p {
-            
             color: #87CEEB;
             text-shadow: 1px 1px black;
             width: 70%;
             font-size: 28px;
             line-height: 30px;
             font-weight: 500;
-
         }
         .laikas {
             display: flex;
@@ -64,7 +61,6 @@ main {
         }
         .form1 {
             width: 70%;
-            
             .form_1 {
                 display: flex;
                 justify-content: center;
@@ -96,3 +92,50 @@ main {
         
     }
 }
+
+main { display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 10vmin;   
+    }
+    .aprasymas {
+        font-size: 24px;
+        line-height: 30px;
+        width: 70%;
+        .kaire {
+            float: left;
+            width: 45%;
+            @media (max-width: 800px) {
+                float: none;
+                padding: 0;
+                padding-bottom: 15vmin;
+                width: 100%;
+            }}
+            h2 {
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            font-size: 28px;
+            font-weight: 800;
+        }
+        .bar { width: 100%; 
+        }
+        .desine { padding-left: 10%;
+            float: left;
+            width: 45%;
+            @media (max-width: 800px) {
+                width: 100%;
+                float: none;
+            padding: 0;}}
+            h2 {
+                text-transform: uppercase;
+                padding-bottom: 20px;
+                font-size: 28px;
+                font-weight: 800;
+                }
+        }
+
+    
+
+    
