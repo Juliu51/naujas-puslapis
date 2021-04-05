@@ -46,8 +46,9 @@ header {
                 
                 display:inline-block;
                 height: 100%;
-                width: 100%;
-                margin-left: 30%;
+                width: 70%;
+                float: left;
+                }
             }
             .dienos {
                 display: flex;
@@ -57,6 +58,9 @@ header {
                 height: 100%;
                 width: 25%;
                 margin: 2vmin;
+                @media (max-width: 800px) {
+                    align-items: left;
+                    justify-content: left;
             }
         }
         .form1 {

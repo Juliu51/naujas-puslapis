@@ -126,12 +126,12 @@ header .header-textas .laikas {
   header .header-textas .laikas {
     display: inline-block;
     height: 100%;
-    width: 100%;
-    margin-left: 30%;
+    width: 70%;
+    float: left;
   }
 }
 
-header .header-textas .laikas .dienos {
+header .header-textas .dienos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,6 +139,13 @@ header .header-textas .laikas .dienos {
   height: 100%;
   width: 25%;
   margin: 2vmin;
+}
+
+@media (max-width: 800px) {
+  header .header-textas .dienos {
+    align-items: left;
+    justify-content: left;
+  }
 }
 
 header .header-textas .form1 {
