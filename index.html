@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="icon" href="./img/svg/001-elephant.svg">
+    <script>
+        var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("d").innerHTML = days + " days ";
+          document.getElementById("h").innerHTML = hours + " hours ";
+          document.getElementById("m").innerHTML = minutes + " minutes ";
+          document.getElementById("s").innerHTML = seconds + " seconds ";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
 
     <title>Naujas puslapis</title>
 </head>
@@ -13,24 +32,34 @@
     <div class="wrapper">
         <main>
             <div class="main-textas">
-            <img src="./img/png/001-elephant.png" alt="ico" class="ico">
-           <h1>coming soon</h1>
-           <p class="textas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium odit consequuntur repellat commodi nisi repudiandae, id quidem similique ducimus laboriosam a, recusandae hic? Fuga rerum sed obcaecati ullam facere?</p>
+                <img src="./img/png/001-elephant.png" alt="ico" class="ico">
+                <h1>coming soon</h1>
+                 <p class="textas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium odit consequuntur repellat commodi nisi repudiandae, id quidem similique ducimus laboriosam a, recusandae hic? Fuga rerum sed obcaecati ullam facere?</p>
             <div class="laikas">
                 <div class="dienos">
-                    <label>days</label>
+                    <label id="d"></label>
                 </div>
-                    <div class="dienos">
-                        <label>hours</label>
-                    </div>
-                        <div class="dienos">
-                            <label>minutes</label>
-                        </div>
-                            <div class="dienos">
-                                <label>seconds</label>
-                            </div>
+                <div class="dienos">
+                    <label id="h"></label>
+                </div>
+                <div class="dienos">
+                    <label id="m"></label>
+                </div>
+                <div class="dienos">
+                    <label id="s">s</label>
+                </div>
             </div>
+            <div class="form1">
+            <form class="form_1">Subscribe form</form>
+            <form>
+                <input class="inputas" type="email" name="email" placeholder="Type your email">
+               <div class="btn">
+                   <button>Subscribe now</button>
+                </div>
+            </form>
+        </div>
             </div>
+            
         </main>
     </div>
 </body>

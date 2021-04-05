@@ -10,7 +10,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 30px 20px 0 20px;
+        padding: 30px 5px 0 5px;
         .ico {
             height: 70px;
             margin-bottom: 30px;
@@ -20,7 +20,8 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column; 
-        width: 100%;
+        width: 70%;
+        text-shadow: 1px 1px black;
         text-transform: uppercase;
         margin-bottom: 25px;
         font-size: 70px;
@@ -30,20 +31,61 @@ main {
             
             color: #87CEEB;
             text-shadow: 1px 1px black;
-            width: 90vmin;
+            width: 70%;
             font-size: 28px;
             line-height: 30px;
             font-weight: 500;
+
         }
         .laikas {
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
+            padding-top: 25px;
+            width: 70%;
+            height: 25vmin;
+            @media (max-width: 800px) {
+                display:inline-block;
+                height: 20%;
+            }
             .dienos {
-                
-                margin: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 50px;
+                height: 100%;
+                width: 25%;
+                margin: 2vmin;
             }
         }
+        .form1 {
+            width: 70%;
+            
+            .form_1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                color: white;
+                font-size: 28px;
+                padding-bottom: 20px;
+                width: 100%;
+            }
+        } .inputas { display: inline-block;
+            margin-left: 20%;
+           width: 60%;
+            background:transparent;
+            border: 0;
+            border-bottom: 2px solid white;
+            font-size: 20px;
+            color: white;
+        }
+        .btn { display: flex;
+                justify-content: center;
+                align-items: center; 
+            margin-top: 5vmin;            
+            }
+        
     }
 }
