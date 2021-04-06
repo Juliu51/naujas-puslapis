@@ -228,6 +228,14 @@ main {
   width: 100%;
 }
 
+.aprasymas .bar .bar_text .labe {
+  display: inline-block;
+}
+
+.aprasymas .bar .bar_text .value {
+  display: inline-block;
+}
+
 .aprasymas .desine {
   padding-left: 10%;
   float: left;
@@ -242,11 +250,33 @@ main {
   }
 }
 
-.aprasymas h2 {
+.aprasymas .desine h2 {
   text-transform: uppercase;
   padding-bottom: 20px;
   font-size: 28px;
   font-weight: 800;
+}
+
+.aprasymas .desine input {
+  float: left;
+  font-size: 20px;
+  width: 45%;
+  height: 5vmin;
+  border-bottom: 2px solid grey;
+  margin-right: 2vmin;
+  color: grey;
+}
+
+@media (max-width: 1367px) {
+  .aprasymas .desine input {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.aprasymas .desine .btn {
+  float: right;
+  padding: 10px 20px;
 }
 
 button {

@@ -122,23 +122,52 @@ main { display: flex;
             padding-bottom: 20px;
             font-size: 28px;
             font-weight: 800;
+            
         }
         .bar { width: 100%; 
-        }
+            
+            .bar_text {
+            
+            .labe { display: inline-block;
+                
+            }
+            .value {display: inline-block;
+               
+                
+            }
+        }}
         .desine { padding-left: 10%;
             float: left;
             width: 45%;
             @media (max-width: 800px) {
                 width: 100%;
                 float: none;
-            padding: 0;}}
+            padding: 0;}
             h2 {
                 text-transform: uppercase;
                 padding-bottom: 20px;
                 font-size: 28px;
                 font-weight: 800;
                 }
-        }
+                input { float: left;
+                    font-size: 20px;
+                    width: 45%;
+                    height: 5vmin;
+                     border-bottom: 2px solid grey;
+                    margin-right: 2vmin;
+                    color: grey;
+            @media (max-width: 1367px) {
+                width: 100%;
+                
+                padding: 20px 0;
+                }}
+                .btn { 
+float: right;
+padding:10px 20px;
+                }
+            }
+            }
+
 
     
 
