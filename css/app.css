@@ -228,18 +228,55 @@ main {
   width: 100%;
 }
 
-.aprasymas .bar .bar_text .labe {
-  display: inline-block;
+.aprasymas .bar .name {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
 }
 
-.aprasymas .bar .bar_text .value {
+.aprasymas .bar .text1 {
+  width: 90%;
+}
+
+.aprasymas .bar .text2 {
+  width: 86%;
+}
+
+.aprasymas .bar .text3 {
+  width: 78%;
+}
+
+.aprasymas .bar .progress {
+  height: 1.5em;
+  width: 100%;
+  background-color: #c71f37;
+  position: relative;
+}
+
+.aprasymas .bar .progress:before {
+  color: #fff;
+  content: attr(data-label);
+  font-size: 0.8em;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  left: 0;
+  right: 0;
+}
+
+.aprasymas .bar .progress .value {
+  background-color: #da1e37;
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
   display: inline-block;
+  height: 100%;
 }
 
 .aprasymas .desine {
   padding-left: 10%;
   float: left;
-  width: 45%;
+  width: 55%;
+  height: 100%;
 }
 
 @media (max-width: 800px) {
@@ -261,13 +298,13 @@ main {
   float: left;
   font-size: 20px;
   width: 45%;
-  height: 5vmin;
+  height: 9vmin;
   border-bottom: 2px solid grey;
   margin-right: 2vmin;
   color: grey;
 }
 
-@media (max-width: 1367px) {
+@media (max-width: 1450px) {
   .aprasymas .desine input {
     width: 100%;
     padding: 20px 0;
@@ -277,6 +314,66 @@ main {
 .aprasymas .desine .btn {
   float: right;
   padding: 10px 20px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff9;
+  font-size: 18px;
+}
+
+footer .container {
+  background-color: #99c1de;
+  width: 70%;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+footer .container .ico {
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.mouse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vmin;
+  clear: both;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 60px;
+  margin-top: 20px;
+}
+
+.mouse svg {
+  fill: white;
+}
+
+.mouse circle {
+  animation: scroll 2.5s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    cy: 481;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    cy: 231;
+  }
 }
 
 button {
